@@ -1,5 +1,20 @@
+import Hero from "@/components/Hero";
+import HomeProperties from "@/components/HomeProperties";
+import InfoBoxes from "@/components/InfoBoxes";
+// import connectDB from "@/config/database";
+import FeaturedProperties from "@/components/FeaturedProperties";
+
 const HomePage = () => {
-  return <div className="text-2xl">Home Page</div>;
+  console.log(process.env.MONGODB_URI);
+
+  return (
+    <>
+      <Hero />
+      <InfoBoxes />
+      <FeaturedProperties />
+      <HomeProperties />
+    </>
+  );
 };
 
 export default HomePage;
